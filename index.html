@@ -1,134 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+    ============================================================
+    Personal Portfolio Website
+    Author  : Shallum Mbugua
+    Role    : IT Consultant & Network Manager
+    Email   : sshallumbugua@gmail.com
+    Created : 2026
+    ============================================================
+-->
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Shallum Mbugua - IT Consultant and Network Manager based in Nairobi, Kenya"/>
-    <title>Shallum Mbugua | IT Consultant & Network Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shallum Mbugua - IT Consultant and Network Manager based in Nairobi, Kenya" />
+    <meta name="author" content="Shallum Mbugua" />
+    <title>Shallum Mbugua | IT Consultant &amp; Network Manager</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <div class="logo">SM</div>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- ============================================================
+             HEADER — Site-wide navigation
+    ============================================================ -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#hero" class="nav__logo" aria-label="Shallum Mbugua Home">SM</a>
+            <ul class="nav__list" role="list">
+                <li class="nav__item"><a href="#hero"     class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about"    class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#skills"   class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact"  class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- MAIN -->
-    <main>
+    <!-- ============================================================
+             MAIN — Primary page content
+    ============================================================ -->
+    <main id="main-content">
 
         <!-- HERO SECTION -->
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <p class="greeting">Welcome, I'm</p>
-                <h1>Shallum<br/>Mbugua</h1>
-                <p class="tagline">IT Consultant &nbsp;·&nbsp; Network Manager</p>
-                <a href="#contact" class="btn">Get In Touch</a>
+        <section id="hero" class="hero" aria-labelledby="hero-heading">
+            <div class="hero__content">
+                <p class="hero__greeting">Welcome, I'm</p>
+                <h1 id="hero-heading" class="hero__title">
+                    Shallum<br />Mbugua
+                </h1>
+                <p class="hero__tagline">IT Consultant &nbsp;&middot;&nbsp; Network Manager</p>
+                <a href="#contact" class="btn btn--primary">Get In Touch</a>
             </div>
-            <div class="hero-decoration" aria-hidden="true">
-                <div class="circle c1"></div>
-                <div class="circle c2"></div>
-                <div class="circle c3"></div>
+            <div class="hero__decoration" aria-hidden="true">
+                <span class="hero__ring hero__ring--sm"></span>
+                <span class="hero__ring hero__ring--md"></span>
+                <span class="hero__ring hero__ring--lg"></span>
             </div>
         </section>
 
         <!-- ABOUT SECTION -->
-        <section id="about">
-            <div class="section-inner">
-                <p class="section-label">01 — About</p>
-                <h2>Who I Am</h2>
-                <p class="about-text">
-                    I'm Shallum Mbugua, a seasoned IT Consultant and Network Manager with expertise in designing and implementing robust IT infrastructure solutions. Based in Nairobi, Kenya, I help organizations optimize their technology investments and build secure, scalable networks.
+        <section id="about" class="section" aria-labelledby="about-heading">
+            <div class="container">
+                <span class="section__label">01 &mdash; About</span>
+                <h2 id="about-heading" class="section__title">Who I Am</h2>
+                <p class="about__text">
+                    I'm Shallum Mbugua, a seasoned IT Consultant and Network Manager based in Nairobi, Kenya.
+                    I have a passion for designing robust, secure, and scalable technology solutions.
+                    I help organisations optimise their IT infrastructure, resolve complex network challenges,
+                    and align technology with their business goals.
                 </p>
+                <div class="about__stats">
+                    <div class="stat">
+                        <span class="stat__value">IT</span>
+                        <span class="stat__label">Consulting</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value">Network</span>
+                        <span class="stat__label">Management</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__value">Tech</span>
+                        <span class="stat__label">Solutions</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- SERVICES SECTION -->
-        <section id="services">
-            <div class="section-inner">
-                <p class="section-label">02 — Services</p>
-                <h2>What I Offer</h2>
+        <section id="services" class="section section--dark" aria-labelledby="services-heading">
+            <div class="container">
+                <span class="section__label">02 &mdash; Services</span>
+                <h2 id="services-heading" class="section__title">What I Do</h2>
                 <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Network Consulting</h3>
-                        <p>Design and optimization of network infrastructure for enterprises.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>IT Infrastructure</h3>
-                        <p>Implementation of scalable and secure IT systems.</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Network Security</h3>
-                        <p>Comprehensive security solutions and threat mitigation.</p>
-                    </div>
+                    <article class="card">
+                        <h3 class="card__title">IT Consulting</h3>
+                        <p class="card__body">
+                            Strategic technology advice to help businesses align IT systems
+                            with their goals and improve overall operational efficiency.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">Network Management</h3>
+                        <p class="card__body">
+                            Design, deployment, and management of secure and reliable
+                            network infrastructure for organisations of all sizes.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">System Administration</h3>
+                        <p class="card__body">
+                            Installation, configuration, and maintenance of servers,
+                            systems, and software to ensure maximum uptime and performance.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3 class="card__title">IT Support</h3>
+                        <p class="card__body">
+                            Responsive technical support and troubleshooting to keep
+                            your business running smoothly without interruption.
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- SKILLS SECTION -->
-        <section id="skills">
-            <div class="section-inner">
-                <p class="section-label">03 — Skills</p>
-                <h2>Technical Expertise</h2>
-                <div class="skills-grid">
-                    <span class="skill-tag">Network Design</span>
-                    <span class="skill-tag">Cisco Routing</span>
-                    <span class="skill-tag">Network Security</span>
-                    <span class="skill-tag">Cloud Infrastructure</span>
-                    <span class="skill-tag">System Administration</span>
-                    <span class="skill-tag">Virtualization</span>
-                </div>
+        <section id="skills" class="section" aria-labelledby="skills-heading">
+            <div class="container">
+                <span class="section__label">03 &mdash; Skills</span>
+                <h2 id="skills-heading" class="section__title">Technical Skills</h2>
+                <ul class="skills-grid" role="list" aria-label="List of technical skills">
+                    <li class="skill-card">Network Design &amp; Administration</li>
+                    <li class="skill-card">IT Infrastructure Management</li>
+                    <li class="skill-card">Cybersecurity &amp; Firewalls</li>
+                    <li class="skill-card">Cloud Computing</li>
+                    <li class="skill-card">Windows &amp; Linux Server</li>
+                    <li class="skill-card">VPN &amp; Remote Access</li>
+                    <li class="skill-card">Technical Support</li>
+                    <li class="skill-card">IT Project Management</li>
+                </ul>
             </div>
         </section>
 
         <!-- PROJECTS SECTION -->
-        <section id="projects">
-            <div class="section-inner">
-                <p class="section-label">04 — Projects</p>
-                <h2>Featured Work</h2>
+        <section id="projects" class="section section--dark" aria-labelledby="projects-heading">
+            <div class="container">
+                <span class="section__label">04 &mdash; Projects</span>
+                <h2 id="projects-heading" class="section__title">My Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Enterprise Network Redesign</h3>
-                        <p>Architected and deployed a new network infrastructure for a leading tech company.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Cloud Migration Project</h3>
-                        <p>Successfully migrated legacy systems to cloud infrastructure with zero downtime.</p>
-                    </div>
+                    <article class="card card--project">
+                        <h3 class="card__title">Enterprise Network Setup</h3>
+                        <p class="card__body">
+                            Designed and deployed a secure enterprise network for a mid-sized
+                            company, improving connectivity and reducing downtime by 40%.
+                        </p>
+                        <a href="#" class="card__link" aria-label="View Enterprise Network Setup project">
+                            View Project &rarr;
+                        </a>
+                    </article>
+                    <article class="card card--project">
+                        <h3 class="card__title">IT Infrastructure Audit</h3>
+                        <p class="card__body">
+                            Conducted a full IT audit for a Nairobi-based organisation,
+                            identifying vulnerabilities and delivering a remediation roadmap.
+                        </p>
+                        <a href="#" class="card__link" aria-label="View IT Infrastructure Audit project">
+                            View Project &rarr;
+                        </a>
+                    </article>
+                    <article class="card card--project">
+                        <h3 class="card__title">Cloud Migration</h3>
+                        <p class="card__body">
+                            Led the migration of on-premise systems to cloud infrastructure,
+                            cutting operational costs and improving scalability.
+                        </p>
+                        <a href="#" class="card__link" aria-label="View Cloud Migration project">
+                            View Project &rarr;
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contact">
-            <div class="section-inner">
-                <p class="section-label">05 — Contact</p>
-                <h2>Get In Touch</h2>
-                <p class="contact-text">I'd love to hear from you. Feel free to reach out for consulting inquiries or collaborations.</p>
-                <a href="mailto:hello@shallummbugua.com" class="btn">Send Email</a>
+        <section id="contact" class="section" aria-labelledby="contact-heading">
+            <div class="container">
+                <span class="section__label">05 &mdash; Contact</span>
+                <h2 id="contact-heading" class="section__title">Get In Touch</h2>
+                <p class="contact__intro">
+                    Have a project, opportunity, or question? I'd love to hear from you.
+                </p>
+                <div class="contact-grid">
+
+                    <!-- Left: Contact Form -->
+                    <div class="contact-grid__form">
+                        <form
+                            class="form"
+                            action="mailto:sshallumbugua@gmail.com"
+                            method="get"
+                            enctype="text/plain"
+                            novalidate
+                            aria-label="Contact form"
+                        >
+                            <div class="form__group">
+                                <label class="form__label" for="name">Full Name</label>
+                                <input
+                                    class="form__input"
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your full name"
+                                    autocomplete="name"
+                                    required
+                                />
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="email">Email Address</label>
+                                <input
+                                    class="form__input"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="your@email.com"
+                                    autocomplete="email"
+                                    required
+                                />
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="message">Message</label>
+                                <textarea
+                                    class="form__textarea"
+                                    id="message"
+                                    name="body"
+                                    rows="6"
+                                    placeholder="Write your message here..."
+                                    required
+                                ></textarea>
+                            </div>
+                            <button class="btn btn--primary" type="submit">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Right: Direct Contact Info -->
+                    <div class="contact-grid__info">
+                        <h3 class="contact__info-title">Direct Contact</h3>
+                        <p class="contact__info-text">
+                            Prefer to reach out directly? Send me an email and
+                            I'll get back to you as soon as possible.
+                        </p>
+                        <a
+                            class="btn btn--outline"
+                            href="mailto:sshallumbugua@gmail.com"
+                            aria-label="Send email to Shallum Mbugua"
+                        >
+                            sshallumbugua@gmail.com
+                        </a>
+                        <ul class="contact__details" role="list">
+                            <li class="contact__detail">
+                                <span class="contact__detail-label">Location</span>
+                                <span class="contact__detail-value">Nairobi, Kenya</span>
+                            </li>
+                            <li class="contact__detail">
+                                <span class="contact__detail-label">Role</span>
+                                <span class="contact__detail-value">IT Consultant &amp; Network Manager</span>
+                            </li>
+                            <li class="contact__detail">
+                                <span class="contact__detail-label">Availability</span>
+                                <span class="contact__detail-value">Open to new projects</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </section>
 
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 Shallum Mbugua. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__inner">
+                <span class="footer__logo" aria-label="Shallum Mbugua">SM</span>
+                <p class="footer__copy">
+                    &copy; 2026 Shallum Mbugua &nbsp;&middot;&nbsp;
+                    IT Consultant &amp; Network Manager &nbsp;&middot;&nbsp;
+                    Nairobi, Kenya
+                </p>
+                <nav class="footer__nav" aria-label="Footer navigation">
+                    <a href="#about"    class="footer__link">About</a>
+                    <a href="#services" class="footer__link">Services</a>
+                    <a href="#projects" class="footer__link">Projects</a>
+                    <a href="#contact"  class="footer__link">Contact</a>
+                </nav>
+            </div>
+        </div>
     </footer>
 
 </body>
-
 </html>
