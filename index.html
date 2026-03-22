@@ -1,77 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Shallum Mbugua - IT Consultant and Network Manager based in Nairobi, Kenya"/>
     <title>Shallum Mbugua | IT Consultant & Network Manager</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <span class="logo">SM</span>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">SM</div>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <p class="greeting">Welcome, I'm</p>
-            <h1>Shallum<br/>Mbugua</h1>
-            <p class="tagline">IT Consultant &nbsp;·&nbsp; Network Manager</p>
-            <a href="#contact" class="btn">Get In Touch</a>
-        </div>
-        <div class="hero-decoration">
-            <div class="circle c1"></div>
-            <div class="circle c2"></div>
-            <div class="circle c3"></div>
-        </div>
-    </section>
+    <!-- MAIN -->
+    <main>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-        <div class="section-inner">
-            <div class="section-label">01 — About</div>
-            <h2>Who I Am</h2>
-            <p class="about-text">
-                I'm Shallum Mbugua, a seasoned IT Consultant and Network Manager with a passion for designing robust, secure, and scalable technology solutions. I help organisations optimise their IT infrastructure, resolve complex network challenges, and align technology with business goals.
-            </p>
-            <div class="about-stats">
-                <div class="stat">
-                    <span class="stat-num">IT</span>
-                    <span class="stat-label">Consulting</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-num">Network</span>
-                    <span class="stat-label">Management</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-num">Tech</span>
-                    <span class="stat-label">Solutions</span>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <p class="greeting">Welcome, I'm</p>
+                <h1>Shallum<br/>Mbugua</h1>
+                <p class="tagline">IT Consultant &nbsp;·&nbsp; Network Manager</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+            <div class="hero-decoration" aria-hidden="true">
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+                <div class="circle c3"></div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <div class="section-inner">
+                <p class="section-label">01 — About</p>
+                <h2>Who I Am</h2>
+                <p class="about-text">
+                    I'm Shallum Mbugua, a seasoned IT Consultant and Network Manager with expertise in designing and implementing robust IT infrastructure solutions. Based in Nairobi, Kenya, I help organizations optimize their technology investments and build secure, scalable networks.
+                </p>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services">
+            <div class="section-inner">
+                <p class="section-label">02 — Services</p>
+                <h2>What I Offer</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Network Consulting</h3>
+                        <p>Design and optimization of network infrastructure for enterprises.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>IT Infrastructure</h3>
+                        <p>Implementation of scalable and secure IT systems.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Network Security</h3>
+                        <p>Comprehensive security solutions and threat mitigation.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section dark">
-        <div class="section-inner">
-            <div class="section-label">02 — Contact</div>
-            <h2>Let's Work Together</h2>
-            <p class="contact-text">Have a project, opportunity, or question? I'd love to hear from you.</p>
-            <a href="mailto:sshallumbugua@gmail.com" class="btn large">sshallumbugua@gmail.com</a>
-        </div>
-    </section>
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <div class="section-inner">
+                <p class="section-label">03 — Skills</p>
+                <h2>Technical Expertise</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">Network Design</span>
+                    <span class="skill-tag">Cisco Routing</span>
+                    <span class="skill-tag">Network Security</span>
+                    <span class="skill-tag">Cloud Infrastructure</span>
+                    <span class="skill-tag">System Administration</span>
+                    <span class="skill-tag">Virtualization</span>
+                </div>
+            </div>
+        </section>
 
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <div class="section-inner">
+                <p class="section-label">04 — Projects</p>
+                <h2>Featured Work</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Enterprise Network Redesign</h3>
+                        <p>Architected and deployed a new network infrastructure for a leading tech company.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Cloud Migration Project</h3>
+                        <p>Successfully migrated legacy systems to cloud infrastructure with zero downtime.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <div class="section-inner">
+                <p class="section-label">05 — Contact</p>
+                <h2>Get In Touch</h2>
+                <p class="contact-text">I'd love to hear from you. Feel free to reach out for consulting inquiries or collaborations.</p>
+                <a href="mailto:hello@shallummbugua.com" class="btn">Send Email</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer>
-        <span class="footer-logo">SM</span>
-        <p>© 2026 Shallum Mbugua &nbsp;·&nbsp; IT Consultant & Network Manager</p>
+        <p>&copy; 2024 Shallum Mbugua. All rights reserved.</p>
     </footer>
 
 </body>
+
 </html>
